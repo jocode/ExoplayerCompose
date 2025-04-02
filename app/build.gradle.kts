@@ -56,4 +56,15 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+    val media3_version = "1.6.0"
+
+    implementation("androidx.media3:media3-exoplayer:$media3_version") // [Required] androidx.media3 ExoPlayer dependency
+    implementation("androidx.media3:media3-session:$media3_version") // [Required] MediaSession Extension dependency
+    implementation("androidx.media3:media3-ui:$media3_version") // [Required] Base Player UI
+    implementation("androidx.media3:media3-exoplayer-dash:$media3_version") // [Optional] If your media item is DASH
+    implementation("androidx.media3:media3-exoplayer-hls:$media3_version") // [Optional] If your media item is HLS (m3u8..)
+    implementation("androidx.media3:media3-exoplayer-smoothstreaming:$media3_version") // [Optional] If your media item is smoothStreaming
+
+    implementation("androidx.navigation:navigation-compose:2.8.9")
 }
